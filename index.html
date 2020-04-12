@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MIIGAiK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="papka/styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div id="mainWrapper">
+  <header> 
+    
+    <div id="logo"> 
+
+      ТУТ ДОЛЖНО БЫТЬ ЛОГО </div>
+	  
+    <div id="headerLinks"><a href="#" title="Login/Register"><?php if(AUTH) { //Если мы авторизированы ?>
+
+    Привет, <?php echo $user['name']; ?>!
+    <a href="login.html?logout">Выход</a>
+
+<?php } else { //Если мы не авторизированы  ?>
+
+<form action="login.html" method="post">
+    <p>Имя пользователя: <input type="text" name="login" /></p>
+    <p>Пароль: <input type="password" name="password" /></p>
+    <p>Запомнить меня: <input type="checkbox" name="remember" /></p>
+    <?php if(!empty($message)) { ?>
+    <p><?php echo $message; ?></p>
+    <?php } ?>
+    <p><input type="submit" value="Вход" /></p>
+</form>
+
+<?php } ?></a><a href="#" title="Cart">ЗИНА-КОРЗИНА</a></div>
+  </header>
+  <section id="offer"> 
+    
+    <h2>СКИДКИ 50%</h2>
+    <p>РИЛ ТОК SALE ТОЛЬКО ЭТОЙ ЗИМОЙ</p>
+  </section>
+  <div id="content">
+    <section class="sidebar"> 
+      
+      <input type="text"  id="search" value="ПОИСК">
+      <div id="menubar">
+        <nav class="menu">
+          <h2>РАЗДЕЛ РАЗ </h2>
+          <hr>
+          <ul>
+       
+            <li><a href="#" title="Link">ССЫЛКА РАЗ</a></li>
+            <li><a href="#" title="Link">ССЫЛКА ДВА</a></li>
+            <li><a href="#" title="Link">ССЫЛКА ТРИ</a></li>
+            <li class="notimp"><a href="#"  title="Link">ССЫЛКА ЧЕТЫРЕ</a></li>
+          </ul>
+        </nav>
+        <nav class="menu">
+          <h2>РАЗДЕЛ ДВА </h2>
+          
+          <hr>
+          <ul>
+           
+            <li><a href="#" title="Link">ССЫЛКА РАЗ</a></li>
+            <li><a href="#" title="Link">ССЫЛКА ДВА</a></li>
+            <li><a href="#" title="Link">ССЛКА ТРИ</a></li>
+            <li class="notimp"><a href="#" title="Link">ССЫЛКА ЧЕТЫРЕ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="mainContent">
+      <div class="productRow">
+        <article class="productInfo">
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар </p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+        <article class="productInfo">
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+        <article class="productInfo"> 
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+      </div>
+      <div class="productRow"> 
+        
+        <article class="productInfo"> 
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+        <article class="productInfo"> 
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+        <article class="productInfo">
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+      </div>
+      <div class="productRow">
+        <article class="productInfo"> 
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+        <article class="productInfo">
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+        <article class="productInfo">
+          <div><img alt="sample" src="papka/images/gennady_gorin.JPG"></div>
+          <p class="price">50Р</p>
+          <p class="productContent">Товар</p>
+          <input type="button" name="button" value="Купить" class="buyButton">
+        </article>
+      </div>
+    </section>
+  </div>
+  <footer> 
+    
+    <div>
+      <p> ТУТ ДОЛЖНО ЧТО-ТО БЫТЬ, НО Я НЕ ЗНАЮ ЧТО </p>
+    </div>
+    <div>
+      <p>ТУТ ТОЖЕ</p>
+    </div>
+    <div class="footerlinks">
+      <p><a href="#" title="Link">ССЫЛКА В ПОПЕ РАЗ </a></p>
+      <p><a href="#" title="Link">ССЫЛКА В ПОПЕ ДВА</a></p>
+      <p><a href="#" title="Link">ССЛКА В ПОПЕ ТРИ</a></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
